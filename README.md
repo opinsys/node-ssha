@@ -2,6 +2,10 @@
 
 OpenLDAP style. See http://www.openldap.org/faq/data/cache/347.html
 
+## Installation
+
+    npm install ssha
+
 ## Usage
 
 ```javascript
