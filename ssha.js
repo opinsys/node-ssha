@@ -31,6 +31,12 @@ bufferConcat = function(list, length) {
 
 var crypto = require("crypto");
 
+
+/**
+* @param {String} secret string
+* @param {Buffer} Predefined salt buffer (optional)
+* @return {String} salted string hash
+*/
 var create = function(secret, salt) {
   var buf, digest, hash;
   if (!salt) {
@@ -45,6 +51,12 @@ var create = function(secret, salt) {
   return "{SSHA}" + buf.toString("base64");
 };
 
+
+/**
+* @param {String} secret string
+* @param {String} salted string hash
+* @return {Boolean}
+*/
 var verify = function(secret, sshaHash) {
   var base64, buf, salt;
   base64 = sshaHash.slice(6);
@@ -52,6 +64,7 @@ var verify = function(secret, sshaHash) {
   salt = buf.slice(20);
   return create(secret, salt) === sshaHash;
 };
+
 
 module.exports = {
   create: create,

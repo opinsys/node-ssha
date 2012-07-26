@@ -3,6 +3,9 @@
   "name": "ssha",
   "description": "Salted SHA1 hashes",
   "version": "1.0.0",
+  "scripts": {
+    "test": "node ssha.js"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/opinsys/node-ssha.git"
