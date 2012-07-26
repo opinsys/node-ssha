@@ -2,7 +2,11 @@
   "author": "Esa-Matti Suuronen <esa-matti@suuronen.org>",
   "name": "ssha",
   "description": "Salted SHA1 hashes",
-  "version": "1.0.0",
+  "homepage": "http://github.com/opinsys/node-ssha/",
+  "bugs": {
+    "url": "https://github.com/opinsys/node-ssha/issues"
+  },
+  "version": "1.0.1",
   "scripts": {
     "test": "node ssha.js"
   },
