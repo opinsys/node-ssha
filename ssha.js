@@ -1,5 +1,5 @@
 // Backported from Node.js 0.8 for Node 0.6 support.
-bufferConcat = function(list, length) {
+var bufferConcat = function(list, length) {
   if (!Array.isArray(list)) {
     throw new Error('Usage: Buffer.concat(list, [length])');
   }
